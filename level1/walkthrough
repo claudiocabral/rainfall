@@ -1,0 +1,4 @@
+gdb ./level1
+info functions
+voir qu'il y a deux functions user, run et main
+disassemble run montre que run fait un appel à system

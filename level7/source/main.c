@@ -18,7 +18,7 @@ struct data {
 int main() {
     data *ptr = malloc(sizeof(data));
     ptr->id = 1;
-    ptr->self = malloc(sizeof(data));
+    ptr->buffer = malloc(sizeof(void *));
     t_data *other_ptr = malloc(sizeof(data));
     other_ptr->id = 2;
     other_ptr->self = malloc(sizeof(void *));

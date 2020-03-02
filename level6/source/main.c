@@ -13,8 +13,8 @@ void m() {
 
 int main() {
     char *buffer = malloc(0x40);
-    t_func f = malloc(sizeof(func));
-    f = &m;
+    t_func f = malloc(sizeof(*t_func));
+    f = m;
     strcpy(argv[1], buffer);
     f();
 }

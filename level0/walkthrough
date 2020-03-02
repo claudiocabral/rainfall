@@ -1,0 +1,4 @@
+gdb ./level0
+disassemble main
+voir que le code check pour le chiffre 423
+./leve0 423

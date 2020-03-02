@@ -7,7 +7,7 @@ void run() {
 
 
 int main(int argc, char **argv) {
-    char buffer[0x50];
-    gets(buffer + 0x10);
+    char buffer[0x40];
+    gets(buffer);
     return 0;
 }
