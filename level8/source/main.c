@@ -5,7 +5,7 @@
 // login
 // 0x804a028 password address
 
-void *auth = 0;
+int *auth = 0;
 void *service = 0;
 
 struct f_table {
@@ -25,11 +25,22 @@ void login(const char *buffer) {
     system("/bin/sh");
 }
 
+void f_auth(const char *buffer) {
+    auth = malloc(4);
+    *auth = 0;
+    if (strlen(buffer + 5) > 0x1e) return;
+    strcpy(auth, buffer + 5);
+}
+
+void f_service(const char *buffer) {
+    service = strdup(buffer + 7);
+}
+
 static struct f_table table[] = {
-    {"auth ", auth},
-    {"reset ", reset},
-    {"service ", service},
-    {"login ", login},
+    {"auth ", f_auth},
+    {"reset", reset},
+    {"service", f_service},
+    {"login", login},
 }
 
 
