@@ -1,0 +1,7 @@
+feed printf with repeated "%08x" to put stack pointer in the begining of printf
+string.
+rerun using the input:
+target address
+%x08 repeated N times to be right before begining of printf buffer
+%d with n modifier to fill input up to 0x40 characters
+%n to write 0x40 to the m variable

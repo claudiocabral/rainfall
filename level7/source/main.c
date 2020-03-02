@@ -26,5 +26,6 @@ int main() {
     strcpy(other_ptr->buffer, argv[2]);
     FILE *file = fopen("/home/user/level8/.pass", "r");
     fgets(buffer, sizeof(buffer), file);
+    puts("~~");
     return 0;
 }

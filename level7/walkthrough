@@ -1,0 +1,3 @@
+on utilise argv[1] pour overflow strcpy et réecrire l'addresse du deuxième
+buffer alloué. on le remplace par l'addresse de `puts` dans la plt.
+Ensuite, avec le deuxième strcpy, on écrit l'addresse de `m` dans la plt.

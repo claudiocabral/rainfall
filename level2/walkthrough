@@ -1,0 +1,4 @@
+gdb ./level2
+disassemble pour comprendre le code
+avec gets on écrase le stack et on met la valeur du pointer de strdup
+dans comme la valeur de retour. Au début du buffer, on met un shellcode

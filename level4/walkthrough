@@ -1,0 +1,2 @@
+same principle as level3, but we have a limited buffer and target number is 0x1025544
+so we're forced to use %d with a number modifier to reach the target number.

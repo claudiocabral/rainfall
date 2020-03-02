@@ -1,0 +1,2 @@
+On inject un shellcode au début du string et on crée un overflow
+pour faire que la vtable du prochain N pointe sur ce shellcode

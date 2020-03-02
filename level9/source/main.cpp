@@ -4,6 +4,10 @@ class N {
     N(int b) {
         a = b;
     }
+    virtual ~N() = default;
+    virtual N& operator+(const &n other) {
+        return a += other.a;
+    }
     void setAnnotation(char *annotation) {
         auto size = strlen(annotation);
         memcpy(buffer, annotation, size);
